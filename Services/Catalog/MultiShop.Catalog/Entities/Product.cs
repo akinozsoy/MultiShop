@@ -19,7 +19,9 @@ namespace MultiShop.Catalog.Entities
         public string ProductDescription { get; set; } // Ürün Açıklaması
 
         public string CategoryId { get; set; }
+
         [BsonIgnore]
+
         public Category Category { get; set; }
 
 

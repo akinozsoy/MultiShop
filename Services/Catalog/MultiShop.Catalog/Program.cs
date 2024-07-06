@@ -7,6 +7,7 @@ using MultiShop.Catalog.Settings;
 using System.Reflection;
 
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 

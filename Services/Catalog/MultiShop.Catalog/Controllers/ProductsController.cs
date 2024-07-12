@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MultiShop.Catalog.Entites;
 using MultiShop.Catalog.Dtos.ProductDtos;
+using Microsoft.AspNetCore.Authorization;
 using MultiShop.Catalog.Services.ProductServices;
 
 namespace MultiShop.Catalog.Controllers
@@ -18,7 +20,7 @@ namespace MultiShop.Catalog.Controllers
 		[HttpGet]
 		public async Task<IActionResult> ProductList()
 		{
-			var values = await _productService.GetAllProductAsync();
+			var values = await _productService.GettAllProductAsync();
 			return Ok(values);
 		}
 		[HttpGet("{id}")]

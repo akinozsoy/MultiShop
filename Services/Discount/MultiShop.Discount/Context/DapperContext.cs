@@ -16,7 +16,7 @@ namespace MultiShop.Discount.Context
 		}
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer("Server=DESKTOP-3LAT6B2;initial Catalog=MultiShopDiscountDb;integrated Security=true");
+			optionsBuilder.UseSqlServer("Server=DESKTOP-P983I8O;initial Catalog=MultiShopDiscountDb;integrated Security=true");
 		}
 		public IDbConnection CreateConnection() => new SqlConnection(_connectionString);
     }

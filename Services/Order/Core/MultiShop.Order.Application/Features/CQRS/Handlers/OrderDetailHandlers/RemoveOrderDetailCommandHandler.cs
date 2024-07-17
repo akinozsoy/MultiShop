@@ -11,9 +11,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers
 {
 	public class RemoveOrderDetailCommandHandler
 	{
-
 		private readonly IRepository<OrderDetail> _repository;
-
 		public RemoveOrderDetailCommandHandler(IRepository<OrderDetail> repository)
 		{
 			_repository = repository;

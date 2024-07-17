@@ -13,7 +13,6 @@ namespace MultiShop.Order.Persistence.Repositories
 	public class Repository<T> : IRepository<T> where T : class
 	{
 		private readonly OrderContext _context;
-
 		public Repository(OrderContext context)
 		{
 			_context = context;
@@ -36,7 +35,6 @@ namespace MultiShop.Order.Persistence.Repositories
 		{
 			return await _context.Set<T>().SingleOrDefaultAsync(filter);
 		}
-
 		public async Task<T> GetByIdAsync(int id)
 		{
 			return await _context.Set<T>().FindAsync(id);

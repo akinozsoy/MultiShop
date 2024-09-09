@@ -31,6 +31,7 @@ namespace MultiShop.IdentityServer
             services.AddLocalApiAuthentication();
 
             services.AddControllersWithViews();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 

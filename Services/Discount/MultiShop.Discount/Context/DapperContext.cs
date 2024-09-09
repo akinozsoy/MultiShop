@@ -1,5 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using MultiShop.Discount.Entites;
 using System.Data;
 
 namespace MultiShop.Discount.Context
@@ -8,7 +9,6 @@ namespace MultiShop.Discount.Context
 	{
 		private readonly IConfiguration _configuration;
 		private readonly string _connectionString;
-
 		public DapperContext(IConfiguration configuration)
 		{
 			_configuration = configuration;
@@ -18,6 +18,7 @@ namespace MultiShop.Discount.Context
 		{
 			optionsBuilder.UseSqlServer("Server=DESKTOP-P983I8O;initial Catalog=MultiShopDiscountDb;integrated Security=true");
 		}
+		public DbSet<Coupon> Coupons { get; set; }
 		public IDbConnection CreateConnection() => new SqlConnection(_connectionString);
-    }
+	}
 }

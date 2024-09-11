@@ -8,11 +8,11 @@ namespace MultiShop.Cargo.WebApi.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class CargoCompanyController : ControllerBase
+	public class CargoCompaniesController : ControllerBase
 	{
 		private readonly ICargoCompanyService _cargoCompanyService;
 
-		public CargoCompanyController(ICargoCompanyService cargoCompanyService)
+		public CargoCompaniesController(ICargoCompanyService cargoCompanyService)
 		{
 			_cargoCompanyService = cargoCompanyService;
 		}
@@ -33,7 +33,8 @@ namespace MultiShop.Cargo.WebApi.Controllers
 			return Ok("Kargo Şirketi Başarıyla Oluşturuldu");
 		}
 		[HttpDelete]
-		public IActionResult RemoveCargoCompany(int id) {
+		public IActionResult RemoveCargoCompany(int id)
+		{
 			_cargoCompanyService.TDelete(id);
 			return Ok("Kargo Şirketi Başarıyla Silindi");
 		}
@@ -42,24 +43,19 @@ namespace MultiShop.Cargo.WebApi.Controllers
 		{
 			var values = _cargoCompanyService.TGetById(id);
 			return Ok(values);
-			
+
 		}
 		[HttpPut]
 		public IActionResult UpdateCargoCompany(UpdateCargoCompanyDto updateCargoCompanyDto)
 		{
 			CargoCompany cargoCompany = new CargoCompany()
-		{
-			CargoCompanyId = updateCargoCompanyDto.CargoCompanyId,
-			CargoCompanyName = updateCargoCompanyDto.CargoCompanyName
-		};	
+			{
+				CargoCompanyId = updateCargoCompanyDto.CargoCompanyId,
+				CargoCompanyName = updateCargoCompanyDto.CargoCompanyName
+			};
 			_cargoCompanyService.TUpdate(cargoCompany);
 			return Ok("Kargo Şirketi Başarıyla Güncellendi");
 		}
-		
 
-
-
-
-		
 	}
 }

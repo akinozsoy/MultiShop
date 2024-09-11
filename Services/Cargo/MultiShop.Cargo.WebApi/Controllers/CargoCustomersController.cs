@@ -47,6 +47,31 @@ namespace MultiShop.Cargo.WebApi.Controllers
 			return Ok("Kargo Müşteri Ekleme İşlemi Başarıyla Yapıldı");
 
 		}
+		[HttpDelete]
+		public IActionResult RemoveCargoCustomer(int id)
+		{
+			_cargoCustomerService.TDelete(id);
+			return Ok("Kargo Müşteri Silme İşlemi Başarıyla Yapıldı");
+		}
+		[HttpPut]
+		public IActionResult UpdateCargoCustomer(UpdateCargoCustomerDto updateCargoCustomerDto)
+		{
+			CargoCustomer cargoCustomer = new CargoCustomer()
+			{
+				Address = updateCargoCustomerDto.Address,
+				City = updateCargoCustomerDto.City,
+				CargoCustomerId = updateCargoCustomerDto.CargoCustomerId,
+				Email = updateCargoCustomerDto.Email,
+				District = updateCargoCustomerDto.District,
+				Name = updateCargoCustomerDto.Name,
+				Phone = updateCargoCustomerDto.Phone,
+				SurName = updateCargoCustomerDto.SurName,
+				
+			};
+			_cargoCustomerService.TUpdate(cargoCustomer);
+			return Ok("Kargo Müşteri Güncelleme işlemi başarıyla yapıldı");
+		}
+
 
 
 	}

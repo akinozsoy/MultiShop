@@ -47,15 +47,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{8BA4C07B-E1DB-4E7B-83D5-F62AA7EB43A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.EntityLayer", "Services\Cargo\MultiShop.Cargo.EntityLayer\MultiShop.Cargo.EntityLayer.csproj", "{1C1862F2-0E8C-4956-8024-B28538C2A465}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.EntityLayer", "Services\Cargo\MultiShop.Cargo.EntityLayer\MultiShop.Cargo.EntityLayer.csproj", "{1C1862F2-0E8C-4956-8024-B28538C2A465}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.BusinessLayer", "Services\Cargo\MultiShop.Cargo.BusinessLayer\MultiShop.Cargo.BusinessLayer.csproj", "{3B605B8F-431E-49A9-AB21-BDF92451A07F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.BusinessLayer", "Services\Cargo\MultiShop.Cargo.BusinessLayer\MultiShop.Cargo.BusinessLayer.csproj", "{3B605B8F-431E-49A9-AB21-BDF92451A07F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.DataAccessLayer", "Services\Cargo\MultiShop.Cargo.DataAccessLayer\MultiShop.Cargo.DataAccessLayer.csproj", "{6D706DFA-EF1D-49F8-A3C6-C4859FCB1867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.DataAccessLayer", "Services\Cargo\MultiShop.Cargo.DataAccessLayer\MultiShop.Cargo.DataAccessLayer.csproj", "{6D706DFA-EF1D-49F8-A3C6-C4859FCB1867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.DtoLayer", "Services\Cargo\MultiShop.Cargo.DtoLayer\MultiShop.Cargo.DtoLayer.csproj", "{EC408D87-8406-4ACA-920A-CB45BB1FC9BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.DtoLayer", "Services\Cargo\MultiShop.Cargo.DtoLayer\MultiShop.Cargo.DtoLayer.csproj", "{EC408D87-8406-4ACA-920A-CB45BB1FC9BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Cargo.WebApi", "Services\Cargo\MultiShop.Cargo.WebApi\MultiShop.Cargo.WebApi.csproj", "{E661133E-33B1-4404-B76A-D14EAE1A535C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiShop.Cargo.WebApi", "Services\Cargo\MultiShop.Cargo.WebApi\MultiShop.Cargo.WebApi.csproj", "{E661133E-33B1-4404-B76A-D14EAE1A535C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{EE3AFC52-1CF7-4943-9CFF-26DBC5BA9E59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.Basket", "Services\Basket\MultiShop.Basket\MultiShop.Basket.csproj", "{EFF917F8-0293-41A8-83F3-73ADFCB245B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{801D8393-96CD-405A-A85D-9E1259562EFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiShop.WebUI", "Frontends\MultiShop.WebUI\MultiShop.WebUI.csproj", "{E649B37B-349E-42A2-9C8A-C64F41C5035E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +119,14 @@ Global
 		{E661133E-33B1-4404-B76A-D14EAE1A535C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E661133E-33B1-4404-B76A-D14EAE1A535C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E661133E-33B1-4404-B76A-D14EAE1A535C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF917F8-0293-41A8-83F3-73ADFCB245B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF917F8-0293-41A8-83F3-73ADFCB245B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF917F8-0293-41A8-83F3-73ADFCB245B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF917F8-0293-41A8-83F3-73ADFCB245B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E649B37B-349E-42A2-9C8A-C64F41C5035E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E649B37B-349E-42A2-9C8A-C64F41C5035E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E649B37B-349E-42A2-9C8A-C64F41C5035E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E649B37B-349E-42A2-9C8A-C64F41C5035E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +151,9 @@ Global
 		{6D706DFA-EF1D-49F8-A3C6-C4859FCB1867} = {8BA4C07B-E1DB-4E7B-83D5-F62AA7EB43A0}
 		{EC408D87-8406-4ACA-920A-CB45BB1FC9BF} = {8BA4C07B-E1DB-4E7B-83D5-F62AA7EB43A0}
 		{E661133E-33B1-4404-B76A-D14EAE1A535C} = {8BA4C07B-E1DB-4E7B-83D5-F62AA7EB43A0}
+		{EE3AFC52-1CF7-4943-9CFF-26DBC5BA9E59} = {03B82FA7-800E-490A-BF57-F4E17131FF1F}
+		{EFF917F8-0293-41A8-83F3-73ADFCB245B6} = {EE3AFC52-1CF7-4943-9CFF-26DBC5BA9E59}
+		{E649B37B-349E-42A2-9C8A-C64F41C5035E} = {801D8393-96CD-405A-A85D-9E1259562EFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E79FF31A-BFF6-487D-8C9E-DB55A57CEB67}

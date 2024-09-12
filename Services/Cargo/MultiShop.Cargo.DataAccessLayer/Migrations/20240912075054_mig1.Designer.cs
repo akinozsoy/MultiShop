@@ -12,7 +12,7 @@ using MultiShop.Cargo.DataAccessLayer.Concrete;
 namespace MultiShop.Cargo.DataAccessLayer.Migrations
 {
     [DbContext(typeof(CargoContext))]
-    [Migration("20240910143006_mig1")]
+    [Migration("20240912075054_mig1")]
     partial class mig1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,8 +32,9 @@ namespace MultiShop.Cargo.DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CargoCompanyId"), 1L, 1);
 
-                    b.Property<int>("CargoCompanyName")
-                        .HasColumnType("int");
+                    b.Property<string>("CargoCompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CargoCompanyId");
 

@@ -15,7 +15,7 @@ namespace MultiShop.Cargo.DataAccessLayer.Migrations
                 {
                     CargoCompanyId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    CargoCompanyName = table.Column<int>(type: "int", nullable: false)
+                    CargoCompanyName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -2,11 +2,11 @@
 
 namespace MultiShop.WebUI.Areas.Admin.ViewComponents.AdminLayoutViewComponents
 {
-    public class _AdminLayoutSidebarComponentPartial : ViewComponent
+    public class _AdminLayoutSideBarComponentPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
-            return View(); 
+            return View();
         }
     }
 }

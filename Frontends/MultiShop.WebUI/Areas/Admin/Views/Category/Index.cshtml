@@ -1,4 +1,5 @@
 ﻿@model List<MultiShop.DtoLayer.CatalogDtos.CategoryDtos.ResultCategoryDto>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
@@ -24,7 +25,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach(var item in Model)
+                            @foreach (var item in Model)
                             {
                                 <tr>
                                     <th scope="row">@item.CategoryID</th>
@@ -37,7 +38,7 @@
 
                         </tbody>
                     </table>
-                    <td><a href="#" class="btn btn-primary">Yeni Kategori Girişi</a></td>
+                    <a href="/Admin/Category/CreateCategory/" class="btn btn-primary">Yeni Kategori Girişi</a>
 
                 </div>
             </div>

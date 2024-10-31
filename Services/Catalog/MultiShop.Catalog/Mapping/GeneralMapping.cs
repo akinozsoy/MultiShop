@@ -1,9 +1,11 @@
 ﻿using AutoMapper;
 using MultiShop.Catalog.Dtos.CategoryDtos;
+using MultiShop.Catalog.Dtos.FeatureSliderDtos;
 using MultiShop.Catalog.Dtos.ProductDetailDtos;
 using MultiShop.Catalog.Dtos.ProductDtos;
 using MultiShop.Catalog.Dtos.ProductImageDtos;
 using MultiShop.Catalog.Entites;
+using MultiShop.Catalog.Entities;
 
 namespace MultiShop.Catalog.Mapping
 {
@@ -34,7 +36,13 @@ namespace MultiShop.Catalog.Mapping
 			CreateMap<Product, ResultProductsWithCategoryDto>().ReverseMap();
 
 
+            CreateMap<FeatureSlider, ResultFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, CreateFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, UpdateFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, GetByIdFeatureSliderDto>().ReverseMap();
 
-		}
+
+
+        }
 	}
 }

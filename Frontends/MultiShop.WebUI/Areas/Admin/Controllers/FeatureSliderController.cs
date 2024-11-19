@@ -33,6 +33,7 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
             }
             return View();
         }
+
         [HttpGet]
         [Route("CreateFeatureSlider")]
         public IActionResult CreateFeatureSlider()

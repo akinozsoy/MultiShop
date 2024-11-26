@@ -39,7 +39,6 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
         [Route("CreateFeature")]
         public IActionResult CreateFeature()
         {
-
             ViewBag.v1 = "Anasayfa";
             ViewBag.v2 = "Öne Çıkan Alanlar";
             ViewBag.v3 = "Öne Çıkan Alan Listesi";
@@ -75,13 +74,12 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> UpdateFeature(string id)
         {
-
             ViewBag.v1 = "Anasayfa";
             ViewBag.v2 = "Öne Çıkan Alanlar";
             ViewBag.v3 = "Öne Çıkan Alan Listesi";
             ViewBag.v0 = "Ana Sayfa Öne Çıkan Alan İşlemleri";
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7075/api/Features" + id);
+            var responseMessage = await client.GetAsync("https://localhost:7075/api/Features/" + id);
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();

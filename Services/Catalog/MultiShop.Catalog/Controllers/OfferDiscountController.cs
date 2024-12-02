@@ -20,7 +20,7 @@ namespace MultiShop.Catalog.Controllers
         [HttpGet]
         public async Task<IActionResult> OfferDiscountList()
         {
-            var values = await _offerDiscountService.GettAllOfferDiscountAsync();
+            var values = await _offerDiscountService.GetAllOfferDiscountAsync();
             return Ok(values);
         }
 

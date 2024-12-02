@@ -4,7 +4,7 @@ namespace MultiShop.Catalog.Services.OfferDiscountServices
 {
     public interface IOfferDiscountService
     {
-        Task<List<ResultOfferDiscountDto>> GettAllOfferDiscountAsync();
+        Task<List<ResultOfferDiscountDto>> GetAllOfferDiscountAsync();
         Task CreateOfferDiscountAsync(CreateOfferDiscountDto createOfferDiscountDto);
         Task UpdateOfferDiscountAsync(UpdateOfferDiscountDto updateOfferDiscountDto);
         Task DeleteOfferDiscountAsync(string id);

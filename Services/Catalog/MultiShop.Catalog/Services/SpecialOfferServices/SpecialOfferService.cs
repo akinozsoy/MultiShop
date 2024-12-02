@@ -36,7 +36,7 @@ namespace MultiShop.Catalog.Services.SpecialOfferServices
             return _mapper.Map<GetByIdSpecialOfferDto>(values);
         }
 
-        public async Task<List<ResultSpecialOfferDto>> GettAllSpecialOfferAsync()
+        public async Task<List<ResultSpecialOfferDto>> GetAllSpecialOfferAsync()
         {
             var values = await _specialOfferCollection.Find(x => true).ToListAsync();
             return _mapper.Map<List<ResultSpecialOfferDto>>(values);

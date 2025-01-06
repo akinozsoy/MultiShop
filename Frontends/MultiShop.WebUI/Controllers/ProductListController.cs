@@ -7,7 +7,7 @@ namespace MultiShop.WebUI.Controllers
         public IActionResult Index()
         {
             return View();
-        }
+        } 
 
         public IActionResult ProductDetail()
         {

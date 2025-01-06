@@ -1,6 +1,5 @@
 ﻿using MultiShop.Catalog.Dtos.BrandDtos;
 
-
 namespace MultiShop.Catalog.Services.BrandServices
 {
     public interface IBrandService

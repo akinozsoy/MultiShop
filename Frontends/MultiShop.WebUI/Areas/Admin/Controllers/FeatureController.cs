@@ -26,7 +26,7 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
             ViewBag.v0 = "Ana Sayfa Öne Çıkan Alan İşlemleri";
 
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7075/api/Features");
+            var responseMessage = await client.GetAsync("https://localhost:7075/api/Features/");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -52,7 +52,7 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createFeatureDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7075/api/Features", stringContent);
+            var responseMessage = await client.PostAsync("https://localhost:7075/api/Features/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "Feature", new { area = "Admin" });
@@ -96,7 +96,7 @@ namespace MultiShop.WebUI.Areas.Admin.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateFeatureDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:7075/api/Features", stringContent);
+            var responseMessage = await client.PutAsync("https://localhost:7075/api/Features/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index", "Feature", new { area = "Admin" });

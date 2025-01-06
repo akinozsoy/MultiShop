@@ -8,7 +8,6 @@ namespace MultiShop.Catalog.Services.BrandServices
 {
     public class BrandService : IBrandService
     {
-
         private readonly IMongoCollection<Brand> _brandCollection;
         private readonly IMapper _mapper;
         public BrandService(IMapper mapper, IDatabaseSettings _databaseSettings)

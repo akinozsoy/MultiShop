@@ -9,10 +9,10 @@ namespace MultiShop.Catalog.Controllers
     [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandsContoller : ControllerBase
+    public class BrandsController : ControllerBase
     {
         private readonly IBrandService _brandService;
-        public BrandsContoller(IBrandService BrandService)
+        public BrandsController(IBrandService BrandService)
         {
             _brandService = BrandService;
         }

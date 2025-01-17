@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using MultiShop.Discount.Entites;
+using MultiShop.Discount.Entities;
 using System.Data;
 
 namespace MultiShop.Discount.Context

@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MultiShop.Catalog.Entites;
+using MultiShop.Catalog.Entities;
 using MultiShop.Catalog.Dtos.ProductDetailDtos;
 using MultiShop.Catalog.Services.ProductDetailDetailServices;
 
 namespace MultiShop.Catalog.Controllers
 {
-	//[Authorize]
+	
 	[AllowAnonymous]
 	[Route("api/[controller]")]
 	[ApiController]

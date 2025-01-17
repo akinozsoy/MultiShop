@@ -9,7 +9,6 @@ using MultiShop.Catalog.Dtos.ProductDetailDtos;
 using MultiShop.Catalog.Dtos.ProductDtos;
 using MultiShop.Catalog.Dtos.ProductImageDtos;
 using MultiShop.Catalog.Dtos.SpecicalOfferDtos;
-using MultiShop.Catalog.Entites;
 using MultiShop.Catalog.Entities;
 
 namespace MultiShop.Catalog.Mapping

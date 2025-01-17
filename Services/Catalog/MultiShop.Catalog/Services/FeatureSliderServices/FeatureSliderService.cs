@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using MongoDB.Driver;
 using MultiShop.Catalog.Dtos.FeatureSliderDtos;
-using MultiShop.Catalog.Entites;
 using MultiShop.Catalog.Entities;
 using MultiShop.Catalog.Settings;
 

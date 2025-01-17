@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MultiShop.Catalog.Entites;
+using MultiShop.Catalog.Entities;
 using MultiShop.Catalog.Dtos.ProductDtos;
 using Microsoft.AspNetCore.Authorization;
 using MultiShop.Catalog.Services.ProductServices;

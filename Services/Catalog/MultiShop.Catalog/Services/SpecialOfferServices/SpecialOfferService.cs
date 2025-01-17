@@ -2,7 +2,6 @@
 using MongoDB.Driver;
 using MultiShop.Catalog.Dtos.CategoryDtos;
 using MultiShop.Catalog.Dtos.SpecicalOfferDtos;
-using MultiShop.Catalog.Entites;
 using MultiShop.Catalog.Entities;
 using MultiShop.Catalog.Settings;
 

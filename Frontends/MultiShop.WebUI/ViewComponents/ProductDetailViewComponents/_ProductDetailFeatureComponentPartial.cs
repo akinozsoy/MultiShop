@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MultiShop.DtoLayer.CatalogDtos.ProductDtos;
+using MultiShop.DtoLayer.CatalogDtos.ProductImageDtos;
 using Newtonsoft.Json;
 using System.Text;
 
@@ -22,7 +23,7 @@ namespace MultiShop.WebUI.ViewComponents.ProductDetailViewComponents
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<UpdateProductDto>(jsonData);
+                var values = JsonConvert.DeserializeObject<GetByIdProductImageDto>(jsonData);
                 return View(values);
             }
             return View();
